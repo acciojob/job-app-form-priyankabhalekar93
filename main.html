@@ -9,21 +9,21 @@
 <body>
     <!-- the entire body must be written by student -->
     <h1>Job App Form</h1>
-    <form>
-        <label>Name:</label><input type="text" id="name" required><br>
-        <label>Email:</label><input type="email" id="email" required><br>
-        <label>Gender:</label><input type="radio" id="gender" name="male" value="HTML"><label>Male</label><input type="radio" id="gender" name="female" value="HTML"><label>Female</label><br>
-        <label>Age:</label><input type="text" id="age" required><br>
-        <label>DOB:</label><input type="text" id="dob" required><br>
-        <label>Password:</label><input type="password" id="password" required><br>
-        <label>Portfolio URL:</label><input type="text" id="portfolio" required><br>
-        <label>Laptop Brands:</label>
+    <form method="post">
+        <label for="name">Name:</label><input type="text" id="name" required><br>
+        <label for="email">Email:</label><input type="email" id="email" required><br>
+        <label for="gender">Gender:</label><input type="radio" id="gender" name="gender" value="male"><label>Male</label><input type="radio" id="gender" name="gender" value="female"><label>Female</label><br>
+        <label for="age">Age:</label><input type="text" id="age" required><br>
+        <label for="dob">DOB:</label><input type="text" id="dob" required><br>
+        <label for="password">Password:</label><input type="password" id="password" required><br>
+        <label for="portfolio">Portfolio URL:</label><input type="text" id="portfolio" required><br>
+        <label for="laptop">Laptop Brands:</label>
         <select name="laptop" id="laptop" required>
 <option value="Apple">Apple</option>
 <option value="Asus">Asus</option>
 <option value="HP">HP</option>
         </select>
-        <button id="sub">Submit</button>
+        <button id="sub" type="submit">Submit</button>
 
     </form>
 
